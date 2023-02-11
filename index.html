@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>crop</title>
+    <style>
+      body {
+        background-color: #6ECB63;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: black;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        background-color: #C9E4C5;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      input[type="text"], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(228, 236, 228);
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        background-color: #6ECB63;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Crop Predictor for Tamil Nadu</h1>
+    
+    <div class="form-container">
+      <form action="\final" method="post">
+        <div class="ico" >
+            <img src="wheat.png" alt="" style="width: 100%;max-width: 150px;margin-top: 50px;padding-left: 200px;padding-bottom: 50px;">
+        </div>
+        <label for="district">Select District:</label>
+        <select id="district" name="district">
+          <option value="chennai">Chennai</option>
+<option value="kanchipuram">Kanchipuram</option>
+<option value="thiruvallur">Thiruvallur</option>
+<option value="vellore">Vellore</option>
+<option value="tiruvannamalai">Tiruvannamalai</option>
+<option value="villupuram">Villupuram</option>
+<option value="cuddalore">Cuddalore</option>
+<option value="salem">Salem</option>
+<option value="namakkal">Namakkal</option>
+<option value="dharmapuri">Dharmapuri</option>
+<option value="eriode">Erode</option>
+<option value="coimbatore">Coimbatore</option>
+<option value="the Nilgiris">The Nilgiris</option>
+<option value="dindigul">Dindigul</option>
+<option value="karur">Karur</option>
+<option value="tiruchirappalli">Tiruchirappalli</option>
+<option value="perambalur">Perambalur</option>
+<option value="pudukkottai">Pudukkottai</option>
+<option value="tiruppur">Tiruppur</option>
+<option value="madurai">Madurai</option>
+<option value="virudhunagar">Virudhunagar</option>
+<option value="sivaganga">Sivaganga</option>
+<option value="ramanathapuram">Ramanathapuram</option>
+<option value="thoothukudi">Thoothukudi</option>
+<option value="tirunelveli">Tirunelveli</option>
+<option value="tenkasi">Tenkasi</option>
+<option value="kanniyakumari">Kanniyakumari</option>
+
+        </select>
+        <label for="soiltype" >Select Soil Type:</label>
+        <select id="soiltype" name="soiltype">
+          <option value="alluvial">Alluvial</option>
+          <option value="black">Black </option>
+          <option value="red and yellow">Red and yellow</option>
+          <option value="laterite">laterite </option>
+          <option value="arid">Arid </option>
+          <option value="mountain and forest">Mountain </option>
+          <option value="dessert">Dessert</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

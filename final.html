@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    .result-box {
+      width: 60%;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #C9E4C5;
+      border-radius: 10px;
+    }
+    body{
+        background-color: #6ECB63;
+        font-family: Arial, sans-serif;
+        color: black;
+    }
+  </style>
+</head>
+<body >
+<h1 style="font-family: 'Playfair Display', serif; font-size: 48px; font-weight: bold; color: black; text-shadow: 2px 2px #ccc; text-transform: uppercase;text-align: center;margin-top: 100px;">PREDICTED RESULT</h1>
+
+  <div class="result-box">
+    
+    <p class="text-center" style="font-size: 24px; margin-top: 50px;">{{ crop[0] }}</p>
+    <p class="text-center" style="font-size: 24px; margin-top: 50px;">{{ cost }}</p>
+  </div>
+</body>
+</html>
