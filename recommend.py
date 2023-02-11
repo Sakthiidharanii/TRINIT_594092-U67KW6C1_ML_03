@@ -39,16 +39,9 @@ def predict():
     y_test_predict=LR.predict(X_test)
     data = np.array([[2023,6]])
     rain=LR.predict(data)
+    temp = 25
+    humid = 50
 
-    api_key = "66e08bc428195d5002615ea10b4b1ef0"
-    base_url = "http://api.openweathermap.org/data/2.5/weather?"
-    complete_url = base_url + "appid=" + api_key + "&q=" + districtt
-    response = requests.get(complete_url)
-    x = response.json()
-    if x["cod"] != "404":
-        y = x["main"]
-        temp = y["temp"]
-        humid = y["humidity"]
 
     d=pd.read_csv('soil dataset.csv')
     d.columns=['soiltype','Ni','Po','Ko','PH']
