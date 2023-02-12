@@ -167,6 +167,6 @@ def predict():
             return render_template('final.html', crop = prediction, cost =price[2] )
         else:
             return render_template('final.html',crop = prediction, cost = "Price detail temporarily not found")
-    return render_template('index.html')    
+    return render_template('final.html')    
 if __name__ == '__main__':
     app.run(debug=True)
