@@ -11,11 +11,11 @@ from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET','DELETE'])
 def index():
     return render_template('index.html')
 
-@app.route('/final', methods=['POST', 'GET'])
+@app.route('/final', methods=['POST', 'GET','DELETE'])
 
 def predict():  
     warnings.filterwarnings('ignore')
